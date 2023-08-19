@@ -36,6 +36,12 @@ By default, running the image will execute the `make run` command. To use with y
 docker run -v <path_to_input_images>:/app/data/img mre0/receipt_parser
 ```
 
+Alternatively, link or connect the entire data directory, and all output files within the docker container will be output on your host:
+
+```
+docker run -v <path_to_data_dir>:/app/data mre0/receipt_parser
+```
+
 ## History
 
 This project started as a hackathon idea. Read more about it on the [trivago techblog](https://tech.trivago.com/2015/10/06/python_receipt_parser/).
